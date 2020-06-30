@@ -25,7 +25,7 @@ public class StudentList{
 	}
 	
 	class StudentIteratorImpl implements StudentIterator{
-		private int index=-1;
+		private int index=0;
 		
 		public StudentIteratorImpl(){}
 		
@@ -34,8 +34,7 @@ public class StudentList{
 		}
 		
 		public Student nextElement(){
-			index++;
-			return students[index];
+			return students[index++];
 		}
 	}
 }
